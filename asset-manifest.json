@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PreentregaFinalReactMarianoMartini/static/css/main.d6ef0a9b.css",
+    "main.js": "/PreentregaFinalReactMarianoMartini/static/js/main.cfa663e5.js",
+    "static/js/787.1b59b69b.chunk.js": "/PreentregaFinalReactMarianoMartini/static/js/787.1b59b69b.chunk.js",
+    "index.html": "/PreentregaFinalReactMarianoMartini/index.html",
+    "main.d6ef0a9b.css.map": "/PreentregaFinalReactMarianoMartini/static/css/main.d6ef0a9b.css.map",
+    "main.cfa663e5.js.map": "/PreentregaFinalReactMarianoMartini/static/js/main.cfa663e5.js.map",
+    "787.1b59b69b.chunk.js.map": "/PreentregaFinalReactMarianoMartini/static/js/787.1b59b69b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6ef0a9b.css",
+    "static/js/main.cfa663e5.js"
+  ]
+}
