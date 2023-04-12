@@ -1,0 +1,6 @@
+
+.navBar {
+    display: flexbox;
+    justify-content: right;
+    align-items: center;
+}
