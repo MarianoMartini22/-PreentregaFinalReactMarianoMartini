@@ -1,6 +1,14 @@
 
-.navBar {
-    display: flexbox;
-    justify-content: right;
-    align-items: center;
+.navbar {
+    background-color: #AEECEF !important;
+}
+
+.nav-link {
+    color: #3066BE !important;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover {
+    background-color: #6D9DC5 !important;
+    color: #AEECEF !important;
 }
