@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/PreentregaFinalReactMarianoMartini/static/css/main.9542d3ff.css",
-    "main.js": "/PreentregaFinalReactMarianoMartini/static/js/main.3593c34f.js",
+    "main.css": "/PreentregaFinalReactMarianoMartini/static/css/main.51b056cb.css",
+    "main.js": "/PreentregaFinalReactMarianoMartini/static/js/main.bb6ed3c9.js",
     "static/js/787.1b59b69b.chunk.js": "/PreentregaFinalReactMarianoMartini/static/js/787.1b59b69b.chunk.js",
+    "static/media/logox128.png": "/PreentregaFinalReactMarianoMartini/static/media/logox128.bd28b0424b79717bcb87.png",
     "index.html": "/PreentregaFinalReactMarianoMartini/index.html",
-    "main.9542d3ff.css.map": "/PreentregaFinalReactMarianoMartini/static/css/main.9542d3ff.css.map",
-    "main.3593c34f.js.map": "/PreentregaFinalReactMarianoMartini/static/js/main.3593c34f.js.map",
+    "main.51b056cb.css.map": "/PreentregaFinalReactMarianoMartini/static/css/main.51b056cb.css.map",
+    "main.bb6ed3c9.js.map": "/PreentregaFinalReactMarianoMartini/static/js/main.bb6ed3c9.js.map",
     "787.1b59b69b.chunk.js.map": "/PreentregaFinalReactMarianoMartini/static/js/787.1b59b69b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9542d3ff.css",
-    "static/js/main.3593c34f.js"
+    "static/css/main.51b056cb.css",
+    "static/js/main.bb6ed3c9.js"
   ]
 }
