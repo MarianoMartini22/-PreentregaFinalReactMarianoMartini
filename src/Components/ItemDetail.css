@@ -1,0 +1,15 @@
+.detailContainer {
+    margin-top: 15vh;
+}
+
+.goBackBtn {
+    position: absolute;
+    left: 0;
+    top: -10vh;
+    left: 3vw;
+    font-size: 3rem;
+    color: #3066BE;
+    background-color: #AEECEF;
+    border-radius: 50%;
+    padding: 1.5rem;
+}

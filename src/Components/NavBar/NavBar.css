@@ -12,3 +12,17 @@
     background-color: #6D9DC5 !important;
     color: #AEECEF !important;
 }
+
+.tituloLogo {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.1rem;
+}
+
+.navbar-nav {
+    margin-right: 10vw !important;
+}
+
+.tituloLogo:hover {
+    background-color: #6D9DC5 !important;
+    color: #AEECEF !important;
+}
