@@ -33,6 +33,7 @@ export const getCategories = () => {
 export const getCategoriesById = (id) => {
     return new Promise ((resolve) => {
         setTimeout(() =>{
+            console.log(id);
             resolve (categories.find((category) => category.id === +id))
         },500)
     })
