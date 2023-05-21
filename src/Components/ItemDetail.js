@@ -3,16 +3,20 @@ import ItemCount from './ItemCount'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useFirebase } from '../hooks/useFirebase';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { CartContext } from '../contexts/CartContext';
+import { useNavigate } from 'react-router-dom';
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) => {
+    const navigate = useNavigate();
     const categoryName = useFirebase('categoria', { id: category }, 'categorias', true);
     useEffect(() => {
     }, [category]);
-    
     const goBack = () => {
-        window.history.back();
+        navigate(-1);
     };
+    const { addToCart } = useContext(CartContext);
+
     return (
         <article className='card detailContainer'>
             <FontAwesomeIcon className='goBackBtn' onClick={goBack} icon={faArrowLeft}/>
@@ -28,7 +32,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                     { (categoryName.nombre) ? <p className='card-text'>Categoria: {categoryName?.nombre.charAt(0).toUpperCase() + categoryName?.nombre.slice(1)}</p> : '' }
                     <p className='card-text'>Descripcion: {description}</p>
                     <p className='card-text'>Precio: ${price}</p>
-                    <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log ('Cantidad agregada ', quantity)}></ItemCount>
+                    <ItemCount initial={1} stock={stock} onAdd={(quantity) => addToCart({ item: {id, name, img, category, description, price, stock}, quantity })}></ItemCount>
                 </div>
                 </div>
             </div>

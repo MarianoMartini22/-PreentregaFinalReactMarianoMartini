@@ -1,0 +1,42 @@
+.texto-compras {
+    padding: 1em;
+    font-weight: 600;
+    font-size: 2em;
+    font-family: "poppins-small", sans-serif;
+    letter-spacing: 1px;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkout-img {
+    width: 7em;
+    height: auto;
+}
+
+#checkout form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#checkout .form-group {
+    width: 20vw;
+    margin-bottom: 1em;
+}
+
+#checkout .form-label {
+    margin-bottom: 0.5em;
+}
+
+#checkout button {
+    margin-top: 1em;
+}
+
+.finalizar-compra {
+    width: 15vw;
+}
