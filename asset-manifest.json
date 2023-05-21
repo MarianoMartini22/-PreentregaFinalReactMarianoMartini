@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PreentregaFinalReactMarianoMartini/static/css/main.b6c84615.css",
-    "main.js": "/PreentregaFinalReactMarianoMartini/static/js/main.bd29dc00.js",
+    "main.css": "/PreentregaFinalReactMarianoMartini/static/css/main.49899426.css",
+    "main.js": "/PreentregaFinalReactMarianoMartini/static/js/main.c881f839.js",
     "static/js/787.1b59b69b.chunk.js": "/PreentregaFinalReactMarianoMartini/static/js/787.1b59b69b.chunk.js",
     "static/media/logox128.png": "/PreentregaFinalReactMarianoMartini/static/media/logox128.bd28b0424b79717bcb87.png",
     "index.html": "/PreentregaFinalReactMarianoMartini/index.html",
-    "main.b6c84615.css.map": "/PreentregaFinalReactMarianoMartini/static/css/main.b6c84615.css.map",
-    "main.bd29dc00.js.map": "/PreentregaFinalReactMarianoMartini/static/js/main.bd29dc00.js.map",
+    "main.49899426.css.map": "/PreentregaFinalReactMarianoMartini/static/css/main.49899426.css.map",
+    "main.c881f839.js.map": "/PreentregaFinalReactMarianoMartini/static/js/main.c881f839.js.map",
     "787.1b59b69b.chunk.js.map": "/PreentregaFinalReactMarianoMartini/static/js/787.1b59b69b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6c84615.css",
-    "static/js/main.bd29dc00.js"
+    "static/css/main.49899426.css",
+    "static/js/main.c881f839.js"
   ]
 }
