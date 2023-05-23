@@ -15,7 +15,8 @@ const ItemListContainer = ({greeting}) => {
   return (
     <div className="mt-5" style={{display: "flex", justifyContent: "center"}}>
       <h1>{greeting}</h1>
-      {(typeof products !== 'undefined' && products.length > 0) ? <ItemList products={products}/> : ''}
+      {
+      (typeof products !== 'undefined' && products.length > 0) ? <ItemList products={products}/> : <p className='no-items'>No hay items para mostrar</p>}
     </div>
   )
 }
