@@ -20,7 +20,7 @@ const CheckoutForm = () => {
     const {
       register,
       handleSubmit,
-      formState: { errors },
+      formState: { errors, isValid },
       reset,
       getValues,
     } = useForm();
@@ -54,7 +54,7 @@ const CheckoutForm = () => {
       try {
         Swal.fire({
           title: 'Espere...',
-          html: 'Estamos cargando su orden',// add html attribute if you want or remove
+          html: 'Estamos cargando su orden',
           allowOutsideClick: false,
           showConfirmButton: false,
         });
@@ -140,7 +140,7 @@ const CheckoutForm = () => {
             )}
           </div>
 
-          <button type="submit" className="btn btn-success finalizar-compra">Finalizar Compra</button>
+          <button type="submit" className="btn btn-success finalizar-compra" disabled={!isValid}>Finalizar Compra</button>
         </form>
       </div>
     );

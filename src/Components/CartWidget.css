@@ -123,3 +123,37 @@
   cursor: pointer;
   color: #ef233c;
 }
+
+/* mobile */
+@media (min-width: 300px) and (max-width: 1079px) {
+  .cartCount {
+    right: 43vw;
+    top: 34vh;
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    z-index: 1;
+    background-color: #119DA4;
+    height: 1.8vh;
+    border-radius: 50%;
+    padding: 0.4rem;
+  }
+}
+
+@media (min-width: 576px) {
+  
+}
+
+/* tablets */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+/* desktop */
+@media (min-width: 1200px) {
+
+}

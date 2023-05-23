@@ -40,3 +40,36 @@
 .finalizar-compra {
     width: 15vw;
 }
+
+/* mobile */
+@media (min-width: 300px) and (max-width: 1079px) {
+  #checkout .form-group {
+    /* Estilos para dispositivos móviles */
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .finalizar-compra {
+    width: 80%;
+    margin-top: 0;
+  }
+
+}
+  
+@media (min-width: 576px) {
+
+}
+
+/* tablets */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+/* desktop */
+@media (min-width: 1200px) {
+
+}
+  

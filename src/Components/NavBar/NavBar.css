@@ -26,3 +26,49 @@
     background-color: #6D9DC5 !important;
     color: #AEECEF !important;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* mobile */
+@media (min-width: 300px) and (max-width: 1079px) {
+    .navbar-brand {
+        width: 1rem;
+    }
+    .cart-items {
+        right: 0;
+        justify-content: center;
+    }
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 4px rgba(48, 102, 190, 0.5);
+    }
+    .goBackBtn {
+        display: none;
+    }
+    .detailContainer {
+        margin: 0 !important;
+    }
+}
+
+@media (min-width: 576px) {
+    
+}
+
+/* tablets */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+/* desktop */
+@media (min-width: 1200px) {
+
+}

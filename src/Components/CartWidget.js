@@ -6,43 +6,60 @@ import { CartContext } from '../contexts/CartContext';
 import { Link } from 'react-router-dom';
 import CartTable from './CartTable';
 
-const CartWidget = () => {
+const CartWidget = ({ goTo }) => {
   const [count, setCount] = useState(0);
   const [modalVisible, setMVisible] = useState(false);
   const { cartItems, montoTotal } = useContext(CartContext);
 
   useEffect(() => {
     let totalCount = 0;
-    cartItems.map((item) => totalCount += item.quantity);
+    cartItems.forEach((item) => (totalCount += item.quantity));
     setCount(totalCount);
   }, [cartItems]);
 
   return (
     <>
-      <div className="cart-items" onClick={() => setMVisible(!modalVisible)}>
-        <FontAwesomeIcon icon={faCartShopping} className="cart" />
-        {count > 0 && (
-          <div className="cartCount">
-            <span className="cartCountNum">{count}</span>
-          </div>
-        )}
-      </div>
-      {
-        (modalVisible) && 
-        <>
-          <div className='cart-arrow'></div>
-            <div className="modal-cart">
-                <CartTable />
-                {
-                  (cartItems.length > 0) ?
-                  <div className='btn-container'>
-                    <span className='no-items'>Total: ${ montoTotal }</span>
-                    <Link className='btn btn-success m-3' to={'/checkout'} onClick={() => setMVisible(false)}>Finalizar Compra</Link>
-                  </div> : ''
-                }
+      {goTo !== "" ? (
+        <div>
+          <Link to={goTo}>
+            <FontAwesomeIcon icon={faCartShopping} className="cart" />
+          </Link>
+          {count > 0 && (
+            <div className="cartCount">
+              <span className="cartCountNum">{count}</span>
             </div>
+          )}
+        </div>
+      ) : (
+        <div className="cart-items" onClick={() => setMVisible(!modalVisible)}>
+          <FontAwesomeIcon icon={faCartShopping} className="cart" />
+          {count > 0 && (
+            <div className="cartCount">
+              <span className="cartCountNum">{count}</span>
+            </div>
+          )}
+        </div>
+      )}
+      {modalVisible && (
+        <>
+          <div className="cart-arrow"></div>
+          <div className="modal-cart">
+            <CartTable />
+            {cartItems.length > 0 && (
+              <div className="btn-container">
+                <span className="no-items">Total: ${montoTotal}</span>
+                <Link
+                  className="btn btn-success m-3"
+                  to={'/checkout'}
+                  onClick={() => setMVisible(false)}
+                >
+                  Finalizar Compra
+                </Link>
+              </div>
+            )}
+          </div>
         </>
-      }
+      )}
     </>
   );
 };

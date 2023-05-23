@@ -5,3 +5,8 @@
     background-color: #AEECEF;
     cursor: pointer;
 }
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
