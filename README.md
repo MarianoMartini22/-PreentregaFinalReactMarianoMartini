@@ -1,4 +1,6 @@
+# Cursos Pepito Online
 
+Nuestra aplicación basada en React es una plataforma educativa online que ofrece una amplia variedad de cursos en Python, JavaScript, desarrollo web, finanzas del hogar y fotografía. Utilizando componentes modulares y una arquitectura robusta, brindamos una experiencia de usuario fluida y atractiva. La aplicación permite a los usuarios buscar y comprar cursos. La aplicación está diseñada para ser responsive, compatible con diferentes dispositivos y optimizada para un rendimiento óptimo.
 
 # Librerías publicas del proyecto
 fortawesome: https://fontawesome.com/ Se agregó para utilizar iconos en la app
